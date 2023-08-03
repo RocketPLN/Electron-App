@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' https://kit.fontawesome.com https://unpkg.com"
+    />
+    <title>Windows App Installer</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/4582254da5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li id="downloadButton">
+          <ion-icon name="cloud-download-outline"></ion-icon>
+          <text>Download</text>
+        </li>
+        <li id="settingButton">
+          <ion-icon name="settings-outline"></ion-icon>
+          <text>Settings</text>
+        </li>
+        <li id="themeButton">
+          <ion-icon id="theme" name="moon-outline"></ion-icon>
+          <text>Theme</text>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="download section">
+      <div class="container">
+        <button id="🦊">
+          <ion-icon name="logo-firefox"></ion-icon>
+        </button>
+        <button id="📝">
+          <ion-icon name="code-slash"></ion-icon>
+        </button>
+        <button id="🟨">
+          <ion-icon name="logo-nodejs"></ion-icon>
+        </button>
+        <button id="🎵"><i class="fa-brands fa-spotify"></i></button>
+        <button id="✉">
+          <ion-icon name="logo-discord"></ion-icon>
+        </button>
+        <button id="⬛">
+          <ion-icon name="terminal"></ion-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="settings section">
+      <div class="container">
+        <h3>Install Directory</h3>
+        <input type="text" disabled placeholder="Install Directory" id="path" />
+        <button id="selectDir">
+          <ion-icon name="folder-open"></ion-icon>
+        </button>
+      </div>
+      <div class="reset">
+        <h3 id="clear">Restart localStorage</h3>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
